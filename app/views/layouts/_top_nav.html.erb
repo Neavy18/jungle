@@ -26,6 +26,9 @@
           </ul>
         </li>
       </ul>
+      <li>
+      <%= link_to 'About us', about_index_path %>
+    </li>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -33,12 +36,10 @@
             <span class="text-danger"><%= fa_icon 'lock', text: 'Admin' %></span>
             <span class="caret"></span>
           </a>
-          <li>
-            <%= link_to 'About us', about_index_path %>
-          </li>
           <ul class="dropdown-menu">
             <li><%= link_to 'Dashboard', [:admin, :root] %></li>
-            <li><%= link_to 'Products',  [:admin, :products] %></li>
+            <li><%= link_to 'Products', [:admin, :products] %></li>
+            <li><%= link_to 'Categories', [:admin, :categories] %></li>
           </ul>
         </li>
         <li>
